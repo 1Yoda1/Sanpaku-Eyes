@@ -1,0 +1,132 @@
+/* Section 1 */
+.usl{
+    color: #d0b084;
+    font-family: "FiraSansRegular", sans-serif;
+    font-size: 22px;
+}
+
+.usl #street{
+    transition: 1s;
+    position: absolute;
+    transform: translate(-50,-50);
+    top: 28%;
+    left: 8%;
+}
+.usl #holiday{
+    max-width: 400px;
+    max-height: 200px;
+    position: absolute;
+    transform: translate(-50,-50);
+    top: 65%;
+    left: 50%;
+    transition: 1s;
+}
+.usl .activeLabel{
+    color: black;
+    transition: 1s;
+}
+.img {
+    background: url('../img/onholiday.jpg');
+    width: 626px;
+    height: 416px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: 2px solid #444;
+    transition:all 1s linear;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 5;
+}
+
+.activeImg {
+    background-size: 100%;
+    background: url('../img/onstreet.jpg');
+    transform: translate(100%,60%);
+    background-repeat: no-repeat;
+}
+#section1 h1{
+    color: #444;
+    position: fixed;
+    top: 1%;
+    left: 68%;
+    font-family: 'FiraSansBold', sans-serif;
+    font-size: 3em;
+}
+
+/* Section 2 */
+
+#section2 h1,
+#section2 p{
+    z-index: 3;
+}
+
+#section2 p{
+
+}
+
+/* Section 3 */
+
+#section3 p{
+    color: #757575;
+}
+
+/* Section 4 */
+#section4 p{
+
+}
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+    color: rgb(0, 0, 0);
+}
+
+#markup{
+    display: block;
+    width: 450px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#vk{
+    min-width: 40px;
+    background: url(../img/vk.png) no-repeat;
+    position: fixed;
+    top: 92%;
+    left: 96%;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    outline: none;
+    border: 0px solid black;
+    transition: 1s;
+}
+
+#vk:hover{
+    transition: 1s;
+    color: white;
+    cursor: pointer;
+    background: url(../img/vkBlack.png) no-repeat;
+}
+
+#inst{
+    outline: none;
+    position: fixed;
+    top: 83%;
+    left: 96%;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    background: url(../img/inst.png) no-repeat;
+    border: 0px solid black;
+    transition: 1s;
+}
+
+#inst:hover{
+    cursor: pointer;
+    background: url(../img/instBlack.png) no-repeat;
+    transition: 1s;
+}

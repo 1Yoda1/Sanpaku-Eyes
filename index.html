@@ -5,155 +5,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Sanpaku Eyes</title>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+
 	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="shortcut icon" href="img/icon.png" type="image/png">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
 	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-			    sectionsColor: ['#f5f5dc', '#d0b084', '#b4f0ef', '#afacb7'],
-			    navigation: {
-			    	'position': 'right',
-			   		'tooltips': ['Приветствие', 'Наши работы', 'Услуги', 'Записаться']
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-			    }
-			});
-			/*
-		    * Internal use of the demo website
-		    */
-		    $('#showExamples').click(function(e){
-				e.stopPropagation();
-				e.preventDefault();
-				$('#examplesList').toggle();
-			});
-
-			$('html').click(function(){
-				$('#examplesList').hide();
-			});
-	    });
-    </script>
-
-    <style>
-    /* Section 1
-	 * --------------------------------------- */
-	#section1 h1{
-		color: #444;
-	}
-	#section1 p{
-		color: #333;
-		color: rgba(0,0,0,0.3);
-	}
-	#section1 img{
-		margin: 20px 0;
-		opacity: 0.7;
-	}
-
-	/* Section 2
-	 * --------------------------------------- */
-	#section2 h1,
-	#section2 p{
-		z-index: 3;
-	}
-	#section2 p{
-		opacity: 0.8;
-	}
-
-	#section2 #colors{
-		right: 60px;
-		bottom: 0;
-		position: absolute;
-		height: 413px;
-		width: 258px;
-		background-repeat: no-repeat;
-	}
-
-	/* Section 3
-	 * --------------------------------------- */
-	#section3 #colors{
-		left: 60px;
-		bottom: 0;
-	}
-	#section3 p{
-		color: #757575;
-	}
-
-	/* Section 4
-	 * --------------------------------------- */
-	#section4 p{
-		opacity: 0.6;
-	}
-
-	/* Overwriting fullPage.js tooltip color
-	* --------------------------------------- */
-	#pp-nav.custom .pp-tooltip{
-		color: #AAA;
-	}
-	#markup{
-		display: block;
-		width: 450px;
-		margin: 20px auto;
-		text-align: left;
-	}
-
-	#vk{
-		background: url(img/vk.png) no-repeat;
-		position: absolute;
-		transform: translate(-50,50);
-		top: 89%;
-    	left: 94%;
-		width: 80px;
-		height: 80px;
-		z-index: 4;
-		outline: none;
-		border: 0px solid black;
-
-	}
-	#vk:hover{
-		transition: 1s;
-		color: white;
-		cursor: pointer;
-		background: url(img/vkBlack.png) no-repeat;
-	}
-	#inst{
-		outline: none;
-		position: absolute;
-		transform: translate(-50,50);
-		top: 79%;
-    	left: 94%;
-		width: 80px;
-		height: 80px;
-		z-index: 4;
-		background: url(img/inst.png) no-repeat;
-		border: 0px solid black;
-	}
-	#inst:hover{
-		cursor: pointer;
-		background: url(img/instBlack.png) no-repeat;
-		transition: 1s;
-
-	}
-
-	</style>
-
+	
 </head>
 <body>
 	<ul id="menu">
@@ -163,18 +25,19 @@
 		<li data-menuanchor="page4"><a href="#page4">Записаться</a></li>
 	</ul>
 
-
 	<div id="pagepiling">
 	    <div class="section" id="section1">
-	    	<h1>Фотостудия "Sanpaku Eyes"</h1>
-			<p>Работаем, в первую очередь, на результат!</p>
-			<br />
+			<h1>Услуги Фотографа<br/>"Sanpaku Eyes"</h1>
+			<div class="img"></div>
+			<div class="usl">
+				<p id="street">Качественные фотосессии!</p>
+				<p id="holiday" class="activeLabel">Фотограф на ваш праздник!</p>
+			</div>
 	    </div>
 	    <div class="section" id="section2">
 	    	<div class="intro">
-	    		<div id="colors"></div>
 	    		<h1>тут работы</h1>
-	    		<p>текст</p>
+	    		<p>text</p>
 	    	</div>
 	    </div>
 	    <div class="section" id="section3">
@@ -191,11 +54,14 @@
 	    	</div>
 	    </div>
 	</div>
-	<form action="#" target="_blank">
-		<button id="vk"></button>
-	</form>
-	<form action="#" target="_blank">
-		<button id="inst"></button>
-	</form>
+	<footer id="connectButton">
+		<form action="https://vk.com/id168997445" target="_blank">
+			<button id="vk"></button>
+		</form>
+		<form action="#" target="_blank">
+			<button id="inst"></button>
+		</form>
+	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
