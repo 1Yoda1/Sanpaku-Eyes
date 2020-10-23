@@ -1,11 +1,11 @@
 @CHARSET "ISO-8859-1";
 /* Reset CSS */
-body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+/* body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
 }
-a{
+a{ */
 	text-decoration:none;
 }
 table {
@@ -30,7 +30,7 @@ caption,th {
     text-align: left;
 
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
     font-weight: normal;
     font-size: 100%;
     margin:0;
@@ -89,7 +89,7 @@ p{
 #menu li a,
 #menu li.active a{
 	padding: 9px 18px;
-	display:block;
+	display:block
 }
 #menu li.active a{
 	color: #fff;
@@ -106,11 +106,7 @@ p{
 }
 
 
-.intro p{
-	width: 50%;
-	margin: 0 auto;
-	font-size: 1.5em;
-}
+
 .twitter-share-button{
 	position: fixed !important;
 	z-index: 99;
@@ -262,9 +258,7 @@ p{
 /* Section 3
  * --------------------------------------- */
 
-#section3 p{
-	color: #757575;
-}
+
 
 
 /* Section 4

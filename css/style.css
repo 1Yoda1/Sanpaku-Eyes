@@ -1,4 +1,5 @@
 /* Section 1 */
+
 .usl{
     color: #d0b084;
     font-family: "FiraSansRegular", sans-serif;
@@ -8,7 +9,6 @@
 .usl #street{
     transition: 1s;
     position: absolute;
-    transform: translate(-50,-50);
     top: 28%;
     left: 8%;
 }
@@ -16,7 +16,6 @@
     max-width: 400px;
     max-height: 200px;
     position: absolute;
-    transform: translate(-50,-50);
     top: 65%;
     left: 50%;
     transition: 1s;
@@ -64,18 +63,98 @@
 }
 
 #section2 p{
-
+    position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Section 3 */
-
-#section3 p{
-    color: #757575;
+#section3 .header h1{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    position: fixed;
+}
+#section3 .header #photosessionsInfo{
+    top: 20%;
+    left: 17%;
+}
+#section3 .header #holidaysInfo{
+    top: 20%;
+    left: 60%;
+}
+.photosessions{
+    position: absolute;
+    top: 28%;
+    left:10%;
+    width: 700px;
+    text-align: left;
+}
+.photosessions p{
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+}
+.photosessionsOnStreet{
+    height: 65px;
+    padding: 30px;
+}
+.photosessionsInStudio{
+    height: 200px;
+    padding: 30px;
+}
+.photomasterOnHoliday{
+    position: absolute;
+    top: 32%;
+    left: 60%;
+    text-align: left;
+}
+.photomasterOnHoliday p{
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
 }
 
-/* Section 4 */
-#section4 p{
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 4 */
+
+#section4 p{
+    position: relative;
 }
 
 /* Overwriting fullPage.js tooltip color
@@ -91,18 +170,23 @@
     text-align: left;
 }
 
+/* Stilies of the connect buttons */
+
+button{
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    outline: none;
+    transition: 1s;
+    border: 0px solid black;
+}
+
 #vk{
     min-width: 40px;
     background: url(../img/vk.png) no-repeat;
     position: fixed;
     top: 92%;
     left: 96%;
-    width: 50px;
-    height: 50px;
-    z-index: 4;
-    outline: none;
-    border: 0px solid black;
-    transition: 1s;
 }
 
 #vk:hover{
@@ -113,16 +197,11 @@
 }
 
 #inst{
-    outline: none;
+    min-width: 40px;
+    background: url(../img/inst.png) no-repeat;
     position: fixed;
     top: 83%;
     left: 96%;
-    width: 50px;
-    height: 50px;
-    z-index: 4;
-    background: url(../img/inst.png) no-repeat;
-    border: 0px solid black;
-    transition: 1s;
 }
 
 #inst:hover{
