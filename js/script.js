@@ -2,6 +2,10 @@ const img = document.querySelector('.img')
 const holiday = document.querySelector('#holiday')
 const street = document.querySelector('#street')
 
+if(innerWidth < 400  && innerHeight < 600){
+    
+}
+
 img.addEventListener('mousemove', (e) => {
     const { target } = e
     
@@ -55,7 +59,7 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3', 'page4'],
-        sectionsColor: ['#d0b084', '#afacb7', '#b4f0ef', '#f5f5dc'],
+        sectionsColor: ['#d0b084', '#afacb7', '#CDB2AC', '#f5f5dc'],
         navigation: {
             'position': 'right',
                'tooltips': ['Приветствие', 'Наши работы', 'Услуги', 'Записаться']

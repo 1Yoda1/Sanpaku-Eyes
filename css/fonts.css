@@ -1,13 +1,4 @@
 @font-face {
-    font-family: "MolotRegular";
-    src: url("../fonts/MolotRegular/MolotRegular.eot");
-    src: url("../fonts/MolotRegular/MolotRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MolotRegular/MolotRegular.woff") format("woff"),
-    url("../fonts/MolotRegular/MolotRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
     font-family: "FiraSansRegular";
     src: url("../fonts/FiraSansRegular/FiraSansRegular.eot");
     src: url("../fonts/FiraSansRegular/FiraSansRegular.eot?#iefix")format("embedded-opentype"),
@@ -46,3 +37,22 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "GardensCRegular";
+    src: url("../fonts/GardensCRegular/GardensCRegular.eot");
+    src: url("../fonts/GardensCRegular/GardensCRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GardensCRegular/GardensCRegular.woff") format("woff"),
+    url("../fonts/GardensCRegular/GardensCRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+	font-family: 'ruberoid_ultra_light';
+	src: url('../fonts/Ruberoid-UltraLight.woff2') format('WOFF2'),
+		url('../fonts/Ruberoid-UltraLight.woff') format('WOFF'),
+		url('../fonts/Ruberoid-UltraLight.eot') format('EOT'),
+		url('../fonts/Ruberoid-UltraLight.svg') format('SVG');
+	font-weight: normal;
+	font-style: normal;
+}
+
