@@ -13,44 +13,71 @@ h1{
 }
 
 /* Section 1 */
-#section1 .usl{
-    color: #d0b084;
-    font-size: 22px;
-    position: absolute;
-    top: 65%;
-    left: 1%;
-}
-#section1 .usl #street{
-    transition: 500ms;
-}
-#section1 .usl #holiday{
-    transition: 500ms;
-}
-#section1 .usl .activeLabel{
-    color: black;
-    transition: 500ms;
-}
-#section1 .img {
-    background: url('../img/onholiday.jpg');
-    width: 626px;
-    height: 416px;
-    background-position: center center;
-    background-repeat: no-repeat;
+#section1{
+    background: url(https://images.unsplash.com/photo-1541422348463-9bc715520974?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
     background-size: cover;
-    cursor: pointer;
-    border: 2px solid #444;
-    transition:all 1s linear;
+}
+#section1 .block{
+    width: auto;
+    height: 550px;
+    margin: 100px;
+    position: relative;
+}
+#section1 .text{
+    width: 100%;
     position: absolute;
-    top: 10%;
-    left: 5%;
-    z-index: 5;
+    top: 27%;
+    left: 45%;
 }
-#section1 .activeImg {
-    background-size: 100%;
-    background: url('../img/onstreet.jpg');
-    transform: translate(100%,60%);
-    background-repeat: no-repeat;
+#section1 .text p{
+    font-size: 22px;
+    font-family: "Mont";
 }
+#section1 .text h2{
+    color: rgba(0, 0, 0,0.7);
+    font-size: 2em;
+    margin: -5px;
+}
+#section1 .block .img1{
+    background: url(../img/img1.jpg) no-repeat;
+    border: 2px solid white;
+    width: 425px;
+    height:250px;
+}
+#section1 .block .img2{
+    background: url(../img/img2.jpg) no-repeat;
+    border: 2px solid white;
+    width: 402px;
+    height:252px;
+    position: absolute;
+    top: 0%;
+    left: 70%;
+}
+#section1 .img3{
+    background: url(../img/img3.jpg) no-repeat;
+    border: 2px solid white;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 67%;
+} 
+#section1 .img4{
+    background: url(../img/img4.jpg) no-repeat;
+    border: 2px solid white;
+    width: 500px;
+    height: 332px;
+    margin-top: 20px;
+    margin-left: 30px;
+}/*
+#section1 .img5{
+    background: url(../img/img5.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+} */
 
 /* Section 2 */
 
@@ -71,14 +98,14 @@ h1{
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
+    background-size: cover;
 }
 #section3 .block{
     background-color: rgba(165, 173, 183, 0.2);
     width: auto;
     height: 550px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    margin: 100px;
+    border-radius: 4%;
     text-align: left;
 }
 #section3 .header h2{
@@ -144,15 +171,89 @@ h1{
 
 #section4{
     background: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 #section4 .block{
     background-color: rgba(212, 118, 118, 0.6);
     width: auto;
     height: 550px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 2px solid rgba(226, 85, 85, 0.2);
+    margin: 100px;
+    border-radius: 4%;
+    position: relative;
+}
+#section4 input[type='number'] {
+    -moz-appearance:textfield;
+}
+#section4 input::-webkit-outer-spin-button,
+#section4 input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#section4 .name{
+    font-size: 22px;
+    font-family: "Mont";
+    position: absolute;
+    top: 25%;
+    left: 34%;
+}
+#section4 .name input[type='text']{
+    background-color: rgba(128, 128, 128,0.4);
+    border: none;
+    outline: none;
+    width: auto;
+    height: 30px;
+}
+#section4 .number{
+    font-size: 22px;
+    font-family: "Mont";
+    position: absolute;
+    top: 25%;
+    left: 52%;
+}
+#section4 .number input[type='text']{
+    background-color: rgba(128, 128, 128,0.4);
+    border: none;
+    outline: none;
+    width: auto;
+    height: 30px;
+}
+#section4 #write-phone-number{
+    background-color: rgba(128, 128, 128,0.4);
+    border: none;
+    outline: none;
+    width: auto;
+    height: 30px;
+}
+#section4 .radio-buttons{
+    font-weight: 700;
+    width: 500px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+#section4 #areaText{
+    margin-top: 20px;
+    font-size: 22px;
+    font-family:"Mont";
+    font-weight: normal;
+}
+#section4 #send{
+    background-color: rgba(128, 128, 128,0.4);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 6%;
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    padding: 20px;
+    transition: 0.5s;
+}
+#section4 #send:hover{
+    background-color: rgba(212, 118, 118, 0.6);
+    transition: 0.5s;
 }
 
 /* Overwriting fullPage.js tooltip color
@@ -182,7 +283,7 @@ h1{
     z-index: 4;
     outline: none;
     transition: 500ms;
-    border: 0px solid black;
+    border: none;
 }
 
 #inst:hover{
